@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `change me`,
@@ -6,6 +6,7 @@ module.exports = {
     author: `your info here`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -28,15 +29,15 @@ module.exports = {
         icon: `src/images/favicon/apple-icon.png`, // This path is relative to the root of the site.
       },
     },
-	{
-		resolve: 'gatsby-source-sanity',
-		options: {
-			projectId: process.env.REACT_APP_SANITY_PROJECT_ID,
-      dataset: process.env.REACT_APP_SANITY_DATASET,
-      token: process.env.REACT_APP_SANITY_API_TOKEN
-		}
-	},
-	`gatsby-plugin-sass`
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: process.env.REACT_APP_SANITY_PROJECT_ID,
+        dataset: process.env.REACT_APP_SANITY_DATASET,
+        token: process.env.REACT_APP_SANITY_API_TOKEN,
+      },
+    },
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

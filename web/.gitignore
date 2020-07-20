@@ -1,6 +1,9 @@
 # dependencies
 /node_modules
 
+# testing
+/src/__tests__/__snapshots__
+
 # misc
 .DS_Store
 .env.local

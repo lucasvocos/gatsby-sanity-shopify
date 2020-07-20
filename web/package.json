@@ -7,6 +7,8 @@
   "dependencies": {
     "@sanity/client": "^0.147.3",
     "babel-plugin-styled-components": "^1.10.7",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "gatsby": "^2.23.3",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.31",
@@ -24,11 +26,18 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-responsive": "^8.0.1",
-    "reset-css": "^5.0.1",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "@testing-library/jest-dom": "^5.11.1",
+    "@testing-library/react": "^10.4.7",
+    "babel-jest": "^26.1.0",
+    "babel-preset-gatsby": "^0.5.2",
+    "enzyme-to-json": "^3.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.1.0",
+    "prettier": "^1.19.1",
+    "react-test-renderer": "^16.13.1"
   },
   "keywords": [
     "gatsby"
@@ -41,7 +50,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

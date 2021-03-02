@@ -4,6 +4,7 @@
 # testing
 /src/__tests__/__snapshots__
 /cache
+/.cache
 
 # misc
 .DS_Store

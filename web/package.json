@@ -3,7 +3,7 @@
   "private": true,
   "description": "Boilerplate for Gatsby + Sanity + Shopify",
   "version": "0.1.0",
-  "author": "You <your-email@domain.com>",
+  "author": "Lucas Vocos <info@lucasvocos.com>",
   "dependencies": {
     "@sanity/client": "^0.147.3",
     "babel-plugin-styled-components": "^1.10.7",
@@ -24,9 +24,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-responsive": "^8.0.1",
-    "styled-components": "^5.1.1"
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.1",
@@ -36,7 +34,6 @@
     "enzyme-to-json": "^3.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
-    "prettier": "^1.19.1",
     "react-test-renderer": "^16.13.1"
   },
   "keywords": [
@@ -44,7 +41,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "build": "gatsby build --log-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
